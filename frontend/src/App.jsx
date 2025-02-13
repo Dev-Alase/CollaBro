@@ -6,6 +6,7 @@ import BasicInfo from './pages/onboarding/BasicInfo';
 import Category from './pages/onboarding/Category';
 import Domains from './pages/onboarding/Domains';
 import Resume from './pages/onboarding/Resume';
+import Profile from './pages/Profile';
 
 // Temporary Dashboard component
 const Dashboard = () => (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/onboarding/domains" element={<Domains />} />
         <Route path="/onboarding/resume" element={<Resume />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/profile" element={<Profile />} />
         <Route path="/" element={<Navigate to="/login" replace />} />
       </Routes>
     </BrowserRouter>
